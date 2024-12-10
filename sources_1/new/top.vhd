@@ -61,20 +61,6 @@ signal ready_SPI: std_logic;
 
 signal Q: std_logic;
 
-----------------------------------------------------------------------
-COMPONENT ila_top4
-PORT (
-	clk : IN STD_LOGIC;
-    probe0 : IN STD_LOGIC_VECTOR(0 DOWNTO 0); 
-	probe1 : IN STD_LOGIC_VECTOR(0 DOWNTO 0); 
-	probe2 : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
-	probe3 : IN STD_LOGIC_VECTOR(7 DOWNTO 0)
-);
-END COMPONENT  ;
-
-signal sclk_buf,mosi_buf: std_logic;
-signal cs_buf: std_logic_vector(7 downto 0);
-------------------------------------------------------------
 
 begin
 
@@ -87,10 +73,10 @@ SPI: SPI_top_transmitter generic map( length => length,
                                       send => valid_for_SPI,
                                       data_in => data_for_SPI,
                                       slave_sel => slave_sel_byte(2 downto 0), 
-                                      mosi => mosi_buf, --mosi
+                                      mosi => mosi, 
                                       ready => ready_SPI,
-                                      sclk => sclk_buf, -- sclk
-                                      cs_vector => cs_buf                      ); --cs_buf
+                                      sclk => sclk,
+                                      cs_vector => cs                        ); 
                                   
 
 UART: UART_top_receiver port map( clk100M => clk100M,
@@ -114,20 +100,5 @@ RESET_DAC_BUF: DFF port map( D => rst,
                              rst => '0' );
                          
 rst_DAC <= not Q;
-
-----------------------------------------------------------
-ILA_TOP: ila_top4
-PORT MAP (
-	clk => clk100M,
-    probe0(0) => rx, 
-	probe1(0) => mosi_buf, 
-	probe2(0) => sclk_buf,
-	probe3 => cs_buf
-);
-
-mosi <= mosi_buf;
-sclk <= sclk_buf;
-cs <= cs_buf;
------------------------------------------------------------
 
 end Behavioral;

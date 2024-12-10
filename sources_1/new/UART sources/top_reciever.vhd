@@ -66,16 +66,7 @@ SH_R: UART_input_shift_reg port map(		rst => rst,
 								           d_in => Rx,
 								          d_out => parallel_data	);
                                       
--- Synchronizer block
---DFF0: DFF port map( D => Rx,
---                    Q => D1,
---                    rst => rst,
---                    clk => clk100M ); 
-                
---DFF1: DFF port map( D => D1,
---                    Q => synch_Rx,
---                    rst => rst,
---                    clk => clk100M );
+
 
 state<=sync_state or s;
 
