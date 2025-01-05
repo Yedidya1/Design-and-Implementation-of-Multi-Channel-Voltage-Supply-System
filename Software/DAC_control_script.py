@@ -44,7 +44,7 @@ def get_serial_connection():
     sys.exit(1)  # Exit the program with an error code
 
 
-# The function gets outputs voltages, transform it to DAC_code and transmits to the appropriate channel.
+# The function gets desired outputs voltages, transform it to DAC_code and transmits to the appropriate channel.
 def write_single_value(channel,Vout):
     
     board_select = channel//32
@@ -86,7 +86,8 @@ def get_offset(offset_volt):
         ser.write(data)
 
 
-# The function reads table of data from an excel file and checks the validity of it:
+# The function reads table of data from an excel file and checks the validity of it.
+# Validity roles are:
 #   1) The difference between maximum voltage to minimum should be less than 20V.
 #   2) All voltages should be inside +/-15V range.
 # If the data is valid, offset value is calculated and wrriten as well as the data. 
@@ -97,7 +98,6 @@ def get_data_from_excel(path):
     ctr=2
     offset=0
 
-    # file_path = r"C:\Users\yedid\OneDrive\DAC_data.xlsx"
     if path==None:
         # Allow up to 3 attempts to enter a correct file path
         attempts = 0
