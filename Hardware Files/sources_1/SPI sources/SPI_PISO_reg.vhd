@@ -6,7 +6,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity SPI_PISO_reg is
     generic(length: integer range 0 to 64 := 8);
-       port(clk100M,clk,rst,enb: in std_logic;
+       port(clk100M,rst,enb: in std_logic;
             par_in: in std_logic_vector(length-1 downto 0);
             count: in integer range 0 to length;
             ser_out: out std_logic );

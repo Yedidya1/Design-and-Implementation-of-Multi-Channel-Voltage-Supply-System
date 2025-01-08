@@ -16,17 +16,8 @@ end UART_to_SPI_32bit_reg;
 architecture Behavioral of UART_to_SPI_32bit_reg is
 
 signal reg_32: std_logic_vector(31 downto 0);
-signal Q: std_logic;
-signal edge_enb: std_logic;
 
 begin
-
---EDGE_DET: DFF port map( D => enb,
---                        Q => Q,
---                        clk => clk,
---                        rst => rst );
-
---edge_enb <= enb and (not Q);
 
 process(clk) begin
     if rst='1' then

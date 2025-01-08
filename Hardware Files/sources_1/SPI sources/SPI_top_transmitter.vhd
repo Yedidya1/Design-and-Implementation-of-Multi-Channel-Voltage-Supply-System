@@ -28,7 +28,7 @@ signal clk_spi: std_logic;  -- the system general clock
 
 component SPI_PISO_reg is
     generic(length: integer range 0 to 64 := 8);
-       port(clk100M,clk,rst,enb: in std_logic;
+       port(clk100M,rst,enb: in std_logic;
             par_in: in std_logic_vector(length-1 downto 0);
             count: in integer range 0 to length;
             ser_out: out std_logic );
@@ -70,7 +70,6 @@ clk_gen: SPI_clock_divider generic map(  freq_M => freq_M   )
                                 
 SHIFT_REG: SPI_PISO_reg generic map   (  length => length   )
                           port map( clk100M => clk100M,
-                                        clk => clk_spi,
                                         rst => rst,
                                         enb => enb,
                                      par_in => data_in,
