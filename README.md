@@ -1,6 +1,6 @@
-# **Smart Multi-Channel Voltage Supply System**
+# **Smart Multi-Channel Voltage Supply System:**
 
-**Overview:**
+## **Overview:**
 This project presents a smart multi-channel voltage supply system, designed for precise and dynamic voltage control across 256 independent channels. The system is ideal for applications requiring accurate voltage delivery to multiple outputs, such as advanced research in metamaterials and other multi-channel-dependent technologies.
 
 The project integrates a combination of hardware and software to deliver a powerful, user-friendly, and scalable solution for controlling voltages in complex systems.
