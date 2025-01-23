@@ -20,6 +20,14 @@ The system consists of three main components:
 
 <img width="770" alt="full_connections_scheme" src="https://github.com/user-attachments/assets/91e65abd-ff0d-4a83-9744-38653927f7c7" />
 
+## **Development Tools and Environments:**
+This project was developed using the following tools and technologies:
+- **Programming and RTL Languages:** VHDL for FPGA design, Python for software development.
+- **FPGA Development Environment:** Xilinx Vivado for RTL design, synthesis, and implementation.
+- **Software Tools:** Python for the user interface, with the `pyserial` library for UART communication.
+- **Hardware Platform:** FPGA development board and AD5372 DAC array.
+- **Compilation and Debugging:** Vivado for FPGA simulation and hardware debugging.
+
 ## **Communication Flow:**
 1. Users specify desired voltages for each channel using the software by manually entering the channel number and desired voltage or by uploading a file with a table containing that data regarding multiple channels.  
 2. The software converts and sends the data to the FPGA via the UART protocol using the USB port.  
@@ -29,15 +37,6 @@ The system consists of three main components:
 - Powering and controlling metasurfaces to manipulate electromagnetic waves dynamically.
 - Driving multi-channel setups in electrical, optical, and RF systems.
 - Supporting research and development in advanced metamaterials and multi-channel electronics.
-
-## **Development Tools and Environments:**
-This project was developed using the following tools and technologies:
-
-- **Programming and RTL Languages:** VHDL for FPGA design, Python for software development.
-- **FPGA Development Environment:** Xilinx Vivado for RTL design, synthesis, and implementation.
-- **Software Tools:** Python for the user interface, with the `pyserial` library for UART communication.
-- **Hardware Platform:** FPGA development board and AD5372 DAC array.
-- **Compilation and Debugging:** Vivado for FPGA simulation and hardware debugging.
 
 ## **Setup and Usage:**
 #### **Hardware Components:**
