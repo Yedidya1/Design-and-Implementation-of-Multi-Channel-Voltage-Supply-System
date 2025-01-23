@@ -18,7 +18,7 @@ The system consists of three main components:
 2. **FPGA Controller:** Processes user commands from the PC, communicates via UART, and transfers data to the DAC array using SPI.  
 3. **User Interface Software:** Dedicated software application that simplifies the process of setting channels voltage.
 
-<img width="770" alt="full_connections_scheme" src="https://github.com/user-attachments/assets/91e65abd-ff0d-4a83-9744-38653927f7c7" />  
+<img width="770" alt="full_connections_scheme" src="https://github.com/user-attachments/assets/91e65abd-ff0d-4a83-9744-38653927f7c7" />    
 *Figure 1: Block Diagram of the Smart Multi-Channel Voltage Supply System.*
 
 ## **Development Tools and Environments:**
