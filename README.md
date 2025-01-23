@@ -7,22 +7,22 @@ The project integrates a combination of hardware and software to deliver a power
 
 ## **Key Features:**
 **- 256 Independent Channels:** Each channel can supply a voltage ranging from -15V to +15V, offering fine-grained control for multi-output applications.  
-**- High Precision and Reliability:** Built with DAC arrays controlled via FPGA, ensuring stable and accurate voltage outputs.
-**- Seamless Serial Communication:** Utilizes UART and SPI protocols for efficient communication between the PC, FPGA, and DAC modules.
-**- Custom Software:** A dedicated application allows users to configure voltages effortlessly, including batch configurations that require many data via file uploads.
-**- Versatile Applications:** While designed with metasurfaces in mind, the system can support a wide range of use cases in research, prototyping, and production.
+**- High Precision and Reliability:** Built with DAC arrays controlled via FPGA, ensuring stable and accurate voltage outputs.  
+**- Seamless Serial Communication:** Utilizes UART and SPI protocols for efficient communication between the PC, FPGA, and DAC modules.  
+**- Custom Software:** A dedicated application allows users to configure voltages effortlessly, including batch configurations that require many data via file uploads.  
+**- Versatile Applications:** While designed with metasurfaces in mind, the system can support a wide range of use cases in research, prototyping, and production.  
 
 ## **System Architecture:**
-The system consists of three main components:
-**1. DAC Array:** Converts digital signals into analog voltages, enabling independent control of each channel. Gets data through SPI communication interface. 
-**2. FPGA Controller:** Processes user commands from the PC, communicates via UART, and transfers data to the DAC array using SPI.
-**3. User Interface Software:** Dedicated software application that simplifies the process of setting channels voltage.
+The system consists of three main components:  
+**1. DAC Array:** Converts digital signals into analog voltages, enabling independent control of each channel. Gets data through SPI communication interface.   
+**2. FPGA Controller:** Processes user commands from the PC, communicates via UART, and transfers data to the DAC array using SPI.  
+**3. User Interface Software:** Dedicated software application that simplifies the process of setting channels voltage.  
 
 ## **Communication Flow:**
 1. Users specify desired voltages for each channel using the software by manually enter channel number and desired voltage or by uploading file with a table contains that 
-   data regard to multiple channels.
-2. The software converts and sends the data to the FPGA via the UART protocol using the USB port.
-3. The FPGA processes the data and forwards it to the DAC array using the SPI protocol.
+   data regard to multiple channels.  
+2. The software converts and sends the data to the FPGA via the UART protocol using the USB port.  
+3. The FPGA processes the data and forwards it to the DAC array using the SPI protocol.  
 
 ## **Applications:**
 - Powering and controlling metasurfaces to manipulate electromagnetic waves dynamically.
