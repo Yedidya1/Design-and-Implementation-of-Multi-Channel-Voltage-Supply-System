@@ -18,7 +18,7 @@ The system consists of three main components:
 2. **FPGA Controller:** Processes user commands from the PC, communicates via UART, and transfers data to the DAC array using SPI.  
 3. **User Interface Software:** Dedicated software application that simplifies the process of setting channels voltage.
 
-![System Architecture Diagram](C:\Users\yedid\OneDrive\קורסים\פרוייקט גמר\סרטוטים ותמונות לספר פרוייקט\סכמת חיבורים כוללת)
+![System Architecture Diagram](C:\Users\yedid\OneDrive\full connections schem.png)
 
 ## **Communication Flow:**
 1. Users specify desired voltages for each channel using the software by manually entering the channel number and desired voltage or by uploading a file with a table containing that data regarding multiple channels.  
