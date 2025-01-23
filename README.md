@@ -6,7 +6,7 @@ This project presents a smart multi-channel voltage supply system, designed for 
 The project integrates a combination of hardware and software to deliver a powerful, user-friendly, and scalable solution for controlling voltages in complex systems.
 
 ## **Key Features:**
-**- 256 Independent Channels:** Each channel can supply a voltage ranging from -15V to +15V, offering fine-grained control for multi-output applications.\n
+**- 256 Independent Channels:** Each channel can supply a voltage ranging from -15V to +15V, offering fine-grained control for multi-output applications.  
 **- High Precision and Reliability:** Built with DAC arrays controlled via FPGA, ensuring stable and accurate voltage outputs.
 **- Seamless Serial Communication:** Utilizes UART and SPI protocols for efficient communication between the PC, FPGA, and DAC modules.
 **- Custom Software:** A dedicated application allows users to configure voltages effortlessly, including batch configurations that require many data via file uploads.
