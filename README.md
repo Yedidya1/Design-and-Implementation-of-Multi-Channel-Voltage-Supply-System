@@ -50,7 +50,7 @@ This project was developed using the following tools and technologies:
 4. Set the EVAL-AD5372 array, connect supply voltages of +/-16.5V to the analog voltage supply pins and 5V to the digital supply voltage pin. Connect the SPI lines between the EVAL board and the FPGA pins specified in the provided .xdc file.  
 5. Activate the software and follow the software instructions.  
 
-**Figure 2: The full system as built for test, there are only 2 EVAL-AD5372 because lack of equipment but the system is fully verified**![מערכת בנויה עם טשטוש](https://github.com/user-attachments/assets/c4600cfe-bdf4-4e74-8e68-803dc618946a)  
+**Figure 2: The full system as built for test, there are only 2 EVAL-AD5372 because lack of equipment but the system is fully verified.**![מערכת בנויה עם טשטוש](https://github.com/user-attachments/assets/c4600cfe-bdf4-4e74-8e68-803dc618946a)  
 
 ## **Testing and Validation:**
 Extensive testing confirmed the system’s reliability and accuracy:
