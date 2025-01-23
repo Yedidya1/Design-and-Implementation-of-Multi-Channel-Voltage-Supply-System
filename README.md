@@ -38,6 +38,8 @@ This project was developed using the following tools and technologies:
 - Driving multi-channel setups in electrical, optical, and RF systems.
 - Supporting research and development in advanced metamaterials and multi-channel electronics.
 
+**Figure 2: A screenshot of the software application** ![software](https://github.com/user-attachments/assets/292ebf77-f61d-46c2-9991-28e858dc9c53)
+
 ## **Setup and Usage:**
 #### **Hardware Components:**
 1. An FPGA board with a built-in USB to UART bridge component.  
